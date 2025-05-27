@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confused Compliment Bot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confused Compliment Bot</h1>
+        <form method="POST">
+            <input type="text" name="user_input" placeholder="Say something..." required>
+            <button type="submit">Compliment me!</button>
+        </form>
+        {% if response %}
+            <p class="response">{{ response }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
